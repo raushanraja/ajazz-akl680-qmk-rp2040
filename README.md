@@ -28,8 +28,19 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ## Refereneces:
 - https://config.qmk.fm
+- https://switchandclick.com/ansi-vs-iso-layout/
 - http://www.keyboard-layout-editor.com
 - https://usevia.app
+- https://www.caniusevia.com/docs/configuring_qmk 
+- https://www.caniusevia.com/docs/download_firmware
+- https://www.youtube.com/watch?v=7d5yzBOup9U
+- https://learn.adafruit.com/using-qmk-on-rp2040-microcontrollers/overview
+- https://learn.adafruit.com/using-qmk-on-rp2040-microcontrollers/rp2040-one-key-keyboard
+- https://cdn-learn.adafruit.com/downloads/pdf/using-qmk-on-rp2040-microcontrollers.pdf
+- https://www.vikasraj.dev/blog/qmk-pi-pico-rp2040
+- https://www.masterzen.fr/2020/05/03/designing-a-keyboard-part-1/
+- https://www.masterzen.fr/2020/05/25/designing-a-keyboard-part2/
+- https://www.masterzen.fr/2020/10/20/designing-a-keyboard-part3/
 
 ## FAQS:
 - Invalid protocol error on usevia.app
@@ -44,4 +55,5 @@ sudo chown $USER:$USER /dev/hidraw12
 sudo chown $USER:$USER /dev/hidraw13
 
 ```
+- https://github.com/qmk/qmk_firmware/issues/22291
 

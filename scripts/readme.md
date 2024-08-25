@@ -51,3 +51,6 @@ like width (`w`) or horizontal position (`x`).
 }
 
 ```
+
+## Others:
+- There are other similar helpful commands available with qmk, just try using qmk and tab autocomplete to see them

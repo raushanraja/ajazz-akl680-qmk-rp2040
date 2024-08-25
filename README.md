@@ -26,6 +26,22 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 - Open https://usevia.app
 - select save icon, use ./akl-qmk-saved-conf.json to load the saved config
 
+## FAQS:
+- Invalid protocol error on usevia.app
+    - Give user the permisson for device
+```bash
+# Check the device id
+ sudo dmesg -w
+
+# (replace hidraw__ with id shown in dmesg)
+sudo chown $USER:$USER /dev/hidraw11
+sudo chown $USER:$USER /dev/hidraw12
+sudo chown $USER:$USER /dev/hidraw13
+
+```
+- https://github.com/qmk/qmk_firmware/issues/22291
+
+
 ## Refereneces:
 - https://config.qmk.fm
 - https://switchandclick.com/ansi-vs-iso-layout/
@@ -41,19 +57,4 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 - https://www.masterzen.fr/2020/05/03/designing-a-keyboard-part-1/
 - https://www.masterzen.fr/2020/05/25/designing-a-keyboard-part2/
 - https://www.masterzen.fr/2020/10/20/designing-a-keyboard-part3/
-
-## FAQS:
-- Invalid protocol error on usevia.app
-    - Give user the permisson for device
-```bash
-# Check the device id
- sudo dmesg -w
-
-# (replace hidraw__ with id shown in dmesg)
-sudo chown $USER:$USER /dev/hidraw11
-sudo chown $USER:$USER /dev/hidraw12
-sudo chown $USER:$USER /dev/hidraw13
-
-```
-- https://github.com/qmk/qmk_firmware/issues/22291
 

@@ -25,3 +25,23 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 ## Reload the Pervious config:
 - Open https://usevia.app
 - select save icon, use ./akl-qmk-saved-conf.json to load the saved config
+
+## Refereneces:
+- https://config.qmk.fm
+- http://www.keyboard-layout-editor.com
+- https://usevia.app
+
+## FAQS:
+- Invalid protocol error on usevia.app
+    - Give user the permisson for device
+```bash
+# Check the device id
+ sudo dmesg -w
+
+# (replace hidraw__ with id shown in dmesg)
+sudo chown $USER:$USER /dev/hidraw11
+sudo chown $USER:$USER /dev/hidraw12
+sudo chown $USER:$USER /dev/hidraw13
+
+```
+
